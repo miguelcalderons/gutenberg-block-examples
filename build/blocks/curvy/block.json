@@ -9,12 +9,44 @@
   "description": "Curvy shape divider to make dividing page more creative.",
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "color": {
+      "background": true,
+      "link": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true
+    }
   },
   "attributes": {
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#ec4899"
+        },
+        "spacing": {
+          "padding": {
+            "top": "80px",
+            "left": "50px",
+            "bottom": "80px",
+            "right": "50px"
+          }
+        }
+      }
+    },
     "enableTopCurve": {
       "type": "boolean",
       "default": true
+    },
+    "topWidth": {
+      "type": "number",
+      "value": 100
+    },
+    "topHeight": {
+      "type": "number",
+      "value": 100
     }
   },
   "textdomain": "blockylicious",
