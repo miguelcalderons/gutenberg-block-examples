@@ -193,15 +193,17 @@ function Edit(props) {
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("span", {
               children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Flip Vertically', _block_json__WEBPACK_IMPORTED_MODULE_4__.textdomain)
             })]
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.HorizontalRule, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
-            children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Curve Color", _block_json__WEBPACK_IMPORTED_MODULE_4__.textdomain)
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.ColorPalette, {
-            value: props.attributes.topColor,
-            onChange: value => {
-              props.setAttributes({
-                topColor: value
-              });
-            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.HorizontalRule, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsxs)("div", {
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("label", {
+              children: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Curve Color", _block_json__WEBPACK_IMPORTED_MODULE_4__.textdomain)
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.ColorPalette, {
+              value: props.attributes.topColor,
+              onChange: value => {
+                props.setAttributes({
+                  topColor: value
+                });
+              }
+            })]
           })]
         })]
       })

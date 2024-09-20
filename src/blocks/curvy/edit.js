@@ -105,14 +105,16 @@ export default function Edit(props) {
 								<span>{__('Flip Vertically', metadata.textdomain)}</span>
 							</div>
 							<HorizontalRule />
-							<label>{__("Curve Color", metadata.textdomain)}</label>
-							<ColorPalette
-								value={props.attributes.topColor}
-								onChange={(value) => {
-									props.setAttributes({
-										topColor: value
-									})
-								}} />
+							<div>
+								<label>{__("Curve Color", metadata.textdomain)}</label>
+								<ColorPalette
+									value={props.attributes.topColor}
+									onChange={(value) => {
+										props.setAttributes({
+											topColor: value
+										})
+									}} />
+							</div>
 						</>
 					}
 				</PanelBody>
