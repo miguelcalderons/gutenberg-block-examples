@@ -1,55 +1,44 @@
-=== Curvy ===
-Contributors:      The WordPress Contributors
-Tags:              block
-Tested up to:      6.6
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+# WordPress Gutenberg Blocks
 
-Example block scaffolded with Create Block tool.
+This repository contains a collection of custom blocks developed with React for use in WordPress. The first custom block included is a **Curvy Block**, which allows users to add inner blocks.
+It was develop by the course Udemy https://www.udemy.com/course/wordpress-gutenberg-block-development/
+## Table of Contents
 
-== Description ==
+- [Installation](#installation)
+- [Usage](#usage)
+- [Curvy Block](#curvy-block)
+- [Contributing](#contributing)
+- [License](#license)
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+## Installation
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+To get started, clone this repository to your local environment:
 
-== Installation ==
+```bash
+git clone https://github.com/miguelcalderons/gutenberg-block-examples
+cd blockylicious
 
-This section describes how to install the plugin and get it working.
+npm install
+```
+## Usage
 
-e.g.
+- Make sure you have WordPress installed and running.
+- Activate the plugin in the WordPress admin area.
+- You can start adding the custom blocks in your post or page editor.
+- Curvy Block
 
-1. Upload the plugin files to the `/wp-content/plugins/curvy` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+The Curvy Block is the first custom block available in this repository. This block is designed to create a visually appealing section with a curved layout.
 
+## Features
 
-== Frequently Asked Questions ==
+Supports inner blocks for flexible content layout.
+Customizable settings through the block inspector.
+Responsive design for optimal viewing on various devices.
 
-= A question that someone might have =
+## Example
 
-An answer to that question.
+To use the Curvy Block, follow these steps:
 
-= What about foo bar? =
-
-Answer to foo bar dilemma.
-
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
-
-== Changelog ==
-
-= 0.1.0 =
-* Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
+In the WordPress block editor, click on the “Add Block” button (+).
+Search for “Curvy and select it.
+Add inner blocks as needed by selecting the "+" button within the Curvy Block.
