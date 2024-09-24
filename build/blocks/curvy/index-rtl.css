@@ -6,3 +6,11 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+.curvy-icon {
+  background: black;
+  color: white;
+}
+.curvy-icon:hover {
+  background: white;
+  color: black;
+}
