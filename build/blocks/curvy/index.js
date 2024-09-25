@@ -287,7 +287,7 @@ const Curve = props => {
       left: "0",
       width: "100%",
       overflow: "hidden",
-      height: props.height,
+      height: `${props.height}px`,
       transform: `scaleX(${props.flipX ? -1 : 1}) rotate(${props.flipY ? "180deg" : 0}) scaleY(${props.isBottom ? -1 : 1})`
     },
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("svg", {
@@ -296,7 +296,7 @@ const Curve = props => {
         position: "absolute",
         top: "0",
         left: "0",
-        height: props.height,
+        height: `${props.height}px`,
         width: `${props.width}%`
       },
       viewBox: "0 0 1200 120",
@@ -464,15 +464,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Edit(props) {
-  console.log(props);
   const {
     className,
     ...blockProps
   } = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.useBlockProps)();
-  console.log({
-    className
-  });
-  console.log("attr", props.attributes);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("section", {
       className: `${className} alignfull`,
@@ -596,7 +591,16 @@ __webpack_require__.r(__webpack_exports__);
   save: _save__WEBPACK_IMPORTED_MODULE_3__["default"],
   icon: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("img", {
     src: _assets_icon_svg__WEBPACK_IMPORTED_MODULE_5__["default"]
-  })
+  }),
+  transforms: {
+    from: [{
+      type: "block",
+      blocks: ['core/heading'],
+      transform: attributes => {
+        return (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("blockylicious/curvy", {}, [(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.createBlock)("core/paragraph", attributes)]);
+      }
+    }]
+  }
 });
 
 /***/ }),
@@ -730,7 +734,7 @@ module.exports = window["wp"]["i18n"];
   \*************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"blockylicious","icon":"smiley","description":"Curvy shape divider to make dividing page more creative.","example":{},"supports":{"html":false,"color":{"background":true,"link":true,"text":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#ec4899"},"spacing":{"padding":{"top":"80px","left":"50px","bottom":"80px","right":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","value":100},"topHeight":{"type":"number","value":100},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false},"topColor":{"type":"string","default":"#FFFFFF"},"enableBottomCurve":{"type":"boolean","default":true},"bottomWidth":{"type":"number","value":100},"bottomHeight":{"type":"number","value":100},"bottomFlipX":{"type":"boolean","default":false},"bottomFlipY":{"type":"boolean","default":false},"bottomColor":{"type":"string","default":"#FFFFFF"}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"blockylicious/curvy","version":"0.1.0","title":"Curvy","category":"blockylicious","icon":"smiley","description":"Curvy shape divider to make dividing page more creative.","example":{},"supports":{"html":false,"color":{"background":true,"link":true,"text":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#ec4899"},"spacing":{"padding":{"top":"80px","left":"50px","bottom":"80px","right":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHeight":{"type":"number","default":100},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false},"topColor":{"type":"string","default":"#FFFFFF"},"enableBottomCurve":{"type":"boolean","default":true},"bottomWidth":{"type":"number","default":100},"bottomHeight":{"type":"number","default":100},"bottomFlipX":{"type":"boolean","default":false},"bottomFlipY":{"type":"boolean","default":false},"bottomColor":{"type":"string","default":"#FFFFFF"}},"textdomain":"blockylicious","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js","render":"file:./render.php"}');
 
 /***/ })
 

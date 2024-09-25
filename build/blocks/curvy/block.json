@@ -42,11 +42,11 @@
     },
     "topWidth": {
       "type": "number",
-      "value": 100
+      "default": 100
     },
     "topHeight": {
       "type": "number",
-      "value": 100
+      "default": 100
     },
     "topFlipX": {
       "type": "boolean",
@@ -66,11 +66,11 @@
     },
     "bottomWidth": {
       "type": "number",
-      "value": 100
+      "default": 100
     },
     "bottomHeight": {
       "type": "number",
-      "value": 100
+      "default": 100
     },
     "bottomFlipX": {
       "type": "boolean",

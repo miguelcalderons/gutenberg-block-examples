@@ -36,10 +36,7 @@ import { TopCurveSettings } from './components/topCurveSettings';
 import { BottomCurveSettings } from './components/bottomCurveSettings';
 
 export default function Edit(props) {
-	console.log(props);
 	const { className, ...blockProps } = useBlockProps();
-	console.log({ className });
-	console.log("attr", props.attributes);
 	return (
 		<>
 			<section className={`${className} alignfull`} {...blockProps}>
